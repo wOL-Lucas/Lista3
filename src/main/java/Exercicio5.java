@@ -5,7 +5,6 @@ escrever a mensagem "Senha Invalida". Quando a senha for informada
 corretamente deve ser impressa
 a mensagem "Acesso Permitido" e o algoritmo encerrado.
 Considere que a senha correta é o valor 2023.
-
 */
 
 import java.util.Scanner;
