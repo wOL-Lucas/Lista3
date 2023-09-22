@@ -33,20 +33,18 @@ public class Exercicio5 {
         return senha;
     }
 
-    public boolean comparePassword(String inputPassword, String correctPassword){
-        return equals(inputPassword,correctPassword);
-    }
-
     public static void main(String[]args){
         Scanner scanner = new Scanner(System.in);
-        String correctPassword = "abc12345";
+        String correctPassword = "2023";
         while(true){
             String passwordInput = getPassword(scanner);
-            if((equals(passwordInput,correctPassword))){
-                System.out.println("Senha correta. Bem vindo")
+            if(passwordInput.equals(correctPassword)){
+                System.out.println("Acesso permitido");
+                break;
             }
-
+            else{
+                System.out.println("Senha inválida.");
+            }
         }
     }
-
 }
